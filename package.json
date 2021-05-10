@@ -6,14 +6,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/nayeemmohamed/solarheating"
+        "url": "git+https://github.com/nayeemmohamed/solarheating.git"
       },
-      "author": "Mujtaba20",
+      "author": "nayeemmohamed",
       "license": "ISC",
       "bugs": {
-        "url": "https://github.com/nayeemmohamed/solarheating"
+        "url": "https://github.com/nayeemmohamed/solarheating/issues"
       },
-      "homepage": "https://github.com/nayeemmohamed/solarheating",
+      "homepage": "https://github.com/nayeemmohamed/solarheating#readme",
 
     "dependencies": {
         "connect": "^3.7.0",
