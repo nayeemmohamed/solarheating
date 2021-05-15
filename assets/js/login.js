@@ -3,7 +3,7 @@ var password;
 function login() {
   username = document.getElementById("username").value;
   password = document.getElementById("password").value;
-  if (username === "admin" && password === "admin") {
+  if (username === credentials.user && password === credentials.pass) {
     swal("Welcome To SolarHeating", "Succesfully Logged In", "success").then(
       (value) => {
         localStorage.clear();
@@ -19,19 +19,6 @@ function login() {
   }
 }
 
-//to check is user is logged in or not
-function isLoggedIn(){
-var loginID=localStorage.getItem("userid");
-if(loginID=="2021"){
-
-}
-else{
-    localStorage.clear();
-    //redirect to login page
-    window.location="login.html";
-}
-}
-
 //This function is for session timeout to login again
 function clearAll(){
   setTimeout(function(){
@@ -45,4 +32,9 @@ function clearAll(){
       window.location="login.html";
     });
   },60000*30);
+}
+
+function logout(){
+  localStorage.clear();
+  window.location="login.html";
 }

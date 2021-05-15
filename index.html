@@ -40,7 +40,21 @@
 
   </head>
 
-  <body onload="isLoggedIn(),clearAll()">
+  <body onload="clearAll()">
+    <script type="text/javascript">
+      //for checking user is logged In or Not
+      var loginID=localStorage.getItem("userid");
+      if(loginID=="2021"){
+
+      }
+      else{
+          localStorage.clear();
+          window.location="login.html";
+      }
+
+    </script>
+
+    <div id="homepage" style="width: 100%;height:100%;">
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top header-transparent">
       <div class="container d-flex align-items-center">
@@ -62,6 +76,7 @@
             <li><a href="#services">Dashboard</a></li>
             <li><a href="#portfolio">Technologies</a></li>
             <li><a href="#team">Team</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
             <!-- <li><a href="#pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li> -->
           </ul>
@@ -300,12 +315,7 @@
           
           <div class="row text-center" style="text-align: center">
             <div class="col-lg-12 text-center">
-              <img
-                style="margin: 4px"
-                src="assets/img/dashboards/dash/1.png"
-                class="img-fluid bg-white col-lg-10"
-                alt=""
-              />
+              <iframe style="width:100%;height: 500px;border: 1px solid rgb(252, 192, 82);" src="https://app.powerbi.com/reportEmbed?reportId=e800a44d-6886-4319-9e4b-4d1dc76e2072&autoAuth=true&ctid=d02378ec-1688-46d5-8540-1c28b5f470f6&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWVhc3QtYXNpYS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
             </div>
           </div>
           <hr style="height: 2px; background: white" />
@@ -313,12 +323,7 @@
           
           <div class="row text-center" style="text-align: center">
             <div class="col-lg-12 text-center">
-              <img
-                style="margin: 4px"
-                src="assets/img/dashboards/dash/2.png"
-                class="img-fluid bg-white col-lg-10"
-                alt=""
-              />
+              <iframe style="width:100%;height: 500px;border: 1px solid rgb(252, 192, 82);" src="https://app.powerbi.com/reportEmbed?reportId=1edabaa1-8641-4638-993e-3f4dee1e0018&autoAuth=true&ctid=d02378ec-1688-46d5-8540-1c28b5f470f6&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWVhc3QtYXNpYS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
             </div>
           </div>
           <hr style="height: 2px; background: white" />
@@ -335,12 +340,7 @@
           </div>
           <div class="row text-center" style="text-align: center">
             <div class="col-lg-12 text-center">
-              <img
-                style="margin: 4px"
-                src="assets/img/dashboards/dash/3.png"
-                class="img-fluid bg-white col-lg-10"
-                alt=""
-              />
+              <iframe style="width:100%;height: 500px;border: 1px solid rgb(252, 192, 82);" src="https://app.powerbi.com/reportEmbed?reportId=289de996-00fd-4be9-8b53-e328365467ad&autoAuth=true&ctid=d02378ec-1688-46d5-8540-1c28b5f470f6&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWVhc3QtYXNpYS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
             </div>
           </div>
           <hr style="height: 2px; background: white" />
@@ -357,12 +357,7 @@
           </div>
           <div class="row text-center" style="text-align: center">
             <div class="col-lg-12 text-center">
-              <img
-                style="margin: 4px"
-                src="assets/img/dashboards/dash/4.png"
-                class="img-fluid bg-white col-lg-10"
-                alt=""
-              />
+              <iframe style="width:100%;height: 500px;border: 1px solid rgb(252, 192, 82);" src="https://app.powerbi.com/reportEmbed?reportId=437d7dd8-2ee9-4737-b446-cccf93592e05&autoAuth=true&ctid=d02378ec-1688-46d5-8540-1c28b5f470f6&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWVhc3QtYXNpYS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
             </div>
           </div>
           <hr style="height: 2px; background: white" />
@@ -378,12 +373,7 @@
           </div>
           <div class="row text-center" style="text-align: center">
             <div class="col-lg-12 text-center">
-              <img
-                style="margin: 4px"
-                src="assets/img/dashboards/dash/5.png"
-                class="img-fluid bg-white col-lg-10"
-                alt=""
-              />
+              <iframe style="width:100%;height: 500px;border: 1px solid rgb(252, 192, 82);" src="https://app.powerbi.com/reportEmbed?reportId=207a72e3-6cc2-490d-a391-79e82e0d268e&autoAuth=true&ctid=d02378ec-1688-46d5-8540-1c28b5f470f6&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWVhc3QtYXNpYS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
             </div>
           </div>
           <hr style="height: 2px; background: white" />
@@ -526,6 +516,31 @@
                   />
                 </div>
               </div>
+            </div>
+          </div>
+
+          
+          <hr style="height: 2px; background: white" />
+          
+          <div class="row text-center" style="text-align: center">
+            <div class="col-lg-12 text-center">
+              <iframe style="width:100%;height: 500px;border: 1px solid rgb(252, 192, 82);" src="https://app.powerbi.com/reportEmbed?reportId=c2a1f511-f020-4e80-9e58-95212c024676&autoAuth=true&ctid=d02378ec-1688-46d5-8540-1c28b5f470f6&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWVhc3QtYXNpYS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+          </div>
+
+          <hr style="height: 2px; background: white" />
+          
+          <div class="row text-center" style="text-align: center">
+            <div class="col-lg-12 text-center">
+              <iframe style="width:100%;height: 500px;border: 1px solid rgb(252, 192, 82);" src="https://app.powerbi.com/reportEmbed?reportId=f10fdc01-6b0a-4793-8d24-b108264bf7db&autoAuth=true&ctid=d02378ec-1688-46d5-8540-1c28b5f470f6&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWVhc3QtYXNpYS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+          </div>
+
+          <hr style="height: 2px; background: white" />
+          
+          <div class="row text-center" style="text-align: center">
+            <div class="col-lg-12 text-center">
+              <iframe style="width:100%;height: 500px;border: 1px solid rgb(252, 192, 82);" src="https://app.powerbi.com/reportEmbed?reportId=41e4cce6-0370-4c53-a0af-41b2330051ce&autoAuth=true&ctid=d02378ec-1688-46d5-8540-1c28b5f470f6&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWVhc3QtYXNpYS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
             </div>
           </div>
 
@@ -950,6 +965,7 @@
     <!-- End Footer -->
 
     <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
